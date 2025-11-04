@@ -7,8 +7,13 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
-app.use(cors());
+// Middleware - Enhanced CORS configuration
+app.use(cors({
+    origin: ['http://localhost:3000', 'http://localhost:3001', 'https://ketananand76.github.io'],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -33,7 +38,17 @@ transporter.verify((error, success) => {
 
 // API endpoint for sending emails
 app.post('/api/send-email', async (req, res) => {
+    console.log('Email request received:', req.body); // Debug log
     const { name, email, subject, message, country, state, type } = req.body;
+
+    // Validate required fields
+    if (!name || !email || !message) {
+        console.log('Missing required fields:', { name, email, message });
+        return res.status(400).json({ 
+            success: false, 
+            message: 'Missing required fields: name, email, and message are required' 
+        });
+    }
 
     try {
         let emailSubject, emailHtml;
@@ -55,20 +70,24 @@ app.post('/api/send-email', async (req, res) => {
                 <h2>New Contact Message</h2>
                 <p><strong>Name:</strong> ${name}</p>
                 <p><strong>Email:</strong> ${email}</p>
-                <p><strong>Subject:</strong> ${subject}</p>
+                <p><strong>Subject:</strong> ${subject || 'No subject'}</p>
                 <p><strong>Message:</strong></p>
                 <p>${message}</p>
             `;
         }
 
+        console.log('Sending email with subject:', emailSubject); // Debug log
+
         // Send email
-        await transporter.sendMail({
+        const info = await transporter.sendMail({
             from: process.env.EMAIL_USER,
             to: process.env.EMAIL_USER, // Send to yourself
             replyTo: email,
             subject: emailSubject,
             html: emailHtml
         });
+
+        console.log('Email sent successfully:', info.messageId); // Debug log
 
         res.status(200).json({ 
             success: true, 
@@ -77,6 +96,7 @@ app.post('/api/send-email', async (req, res) => {
 
     } catch (error) {
         console.error('Error sending email:', error);
+        console.error('Error details:', error.message); // More detailed error
         res.status(500).json({ 
             success: false, 
             message: 'Failed to send email',
