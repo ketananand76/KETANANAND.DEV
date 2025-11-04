@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketan Anand - Web Developer & Graphics Designer</title>
+    <meta name="description" content="Professional portfolio of Ketan Paswan - Expert Web Developer and Creative Graphics Designer">
+    <meta name="keywords" content="web developer, graphics designer, portfolio, HTML, CSS, JavaScript, Figma, Photoshop">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Three.js for 3D Models -->
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <h2>Ketan Anand</h2>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>Ketan<span>.dev</span></h3>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="particles" id="particles"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hi, I'm <span class="highlight">KETAN ANAND</span></h1>
+                        <div class="typing-container">
+                            <h2>I'm a <span class="typed-text" id="typed-text"></span><span class="cursor-type">|</span></h2>
+                        </div>
+                        <p>Passionate about creating beautiful web experiences and stunning visual designs that make a lasting impression.</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="mailto:ketanpaswan53@gmail.com" class="btn btn-outline">Get In Touch</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/ketananand76?tab=repositories" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/posts/ketan-anand-358782235_offer-letter-from-codesoft-internship-program-activity-7207768674013786112-f5Kx/?utm_source=share&utm_medium=member_desktop" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/Mr__perfect_143/status/1539407660675923968" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ketan_2k4?igsh=OW13cTczMno2dW43" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="images/profile.jpg" alt="Ketan Paswan" class="profile-img">
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll Down</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Crafting Digital Experiences</h3>
+                        <p>I'm a passionate web developer and graphics designer with a keen eye for detail and a love for creating innovative digital solutions. With expertise in modern web technologies and design tools, I bring ideas to life through clean code and stunning visuals.</p>
+                        
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h4>50+</h4>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat">
+                                <h4>3+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat">
+                                <h4>100%</h4>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-container">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>HTML5</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>CSS3</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>JavaScript</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Figma</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Photoshop</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span>Illustrator</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tools-section">
+                            <h3>Tools & Technologies</h3>
+                            <div class="tools-grid">
+                                <div class="tool-item">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fab fa-js-square"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fab fa-figma"></i>
+                                    <span>Figma</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <span>Photoshop</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fas fa-vector-square"></i>
+                                    <span>Illustrator</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fab fa-git-alt"></i>
+                                    <span>Git</span>
+                                </div>
+                                <div class="tool-item">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Here are some of my recent works</p>
+                
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Initially visible projects -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/grass.png" alt="E-Commerce Website">
+                            
+                        </div>
+                        <div class="project-content">
+                            <h3>Blender Bigner Grass Model</h3>
+                            <p>A grass model in Blender open source software</p>
+                            <div class="project-tech">
+                                <span>modeling</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/bottel.png" alt="Restaurant Website" onerror="this.src='https://via.placeholder.com/400x300/06b6d4/ffffff?text=Restaurant+Website'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="images/projects/3d modeling offline.pdf" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Report
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Bottel 3D Model</h3>
+                            <p>Coldrink bottel design on blender using modeling and subdivision modeling.</p>
+                            <div class="project-tech">
+                                <span>Blender</span>
+                                <span>Modeling</span>
+                                <span>Subdivision Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/invoice.jpg" alt="Restaurant Website" onerror="this.src='https://via.placeholder.com/400x300/06b6d4/ffffff?text=Restaurant+Website'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://ketananand76.github.io/invoice-generator/" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Live Demo
+                                    </a>
+                                    <a href="https://github.com/ketananand76/invoice-generator" class="project-link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3> Invoice Generator</h3>
+                            <p>The Invoice Generator app allows users to easily create and preview invoices.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/int.png" alt="Portfolio Website" onerror="this.src='https://via.placeholder.com/400x300/f59e0b/ffffff?text=Creative+Portfolio'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="images/projects/myreport.pdf" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                       Report
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Javascript With React Js</h3>
+                            <p>This project was developed as part of an
+online internship organized by IIT BHU and
+EiSystem, focusing on JavaScript with React
+JS. </p>
+                            <div class="project-tech">
+                                <span>REACTJS</span>
+                               
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/reg.png" alt="Brand Design" onerror="this.src='https://via.placeholder.com/400x300/10b981/ffffff?text=Brand+Identity'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://fastidious-gumdrop-940223.netlify.app/" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        View Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Registration Form</h3>
+                            <p>Normal registration ui design</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/YT.png" alt="Brand Design" onerror="this.src='https://via.placeholder.com/400x300/10b981/ffffff?text=Brand+Identity'">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://youtube-cloneby-ketananand.netlify.app/#" class="project-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        View Design
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>YouTube Clone website</h3>
+                            <p>A clone of the youtube created by me</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Figma</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                   
+                    <div class="timeline-item">
+                         <a href="btech.html"><div class="timeline-dot"></div></a>
+                        <div class="timeline-date">2022 - 2026</div>
+                        <div class="timeline-content">
+                           <h3>Bachelor of Technology (B.Tech)</h3>
+                            <h4>3D Animation & Graphics</h4>
+                            <p>Specialized in Graphics Design, web development, and computer graphics. Graduated with distinction and completed several projects in modern web technologies including 3D Texturing, 3D Modeling, and UI/UX design.</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="timeline-item">
+                        <a href="12.html"><div class="timeline-dot"></div></a>
+                        <div class="timeline-date">2020 - 2022</div>
+                        <div class="timeline-content">
+                            <h3>Higher Secondary School (12th Grade)</h3>
+                            <h4>BSEB Board</h4>
+                            <p>Completed higher secondary education with focus on Mathematics, Physics, Chemistry, and Mathematics. Achieved excellent grades and developed strong foundation in programming and logical thinking.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <a href="10.html"><div class="timeline-dot"></div></a>
+                        <div class="timeline-date">2019 - 2020</div>
+                        <div class="timeline-content">
+                            <h3>Secondary School (10th Grade)</h3>
+                            <h4>CBSE Board</h4>
+                            <p>Completed secondary education with distinction. Developed strong analytical skills and interest in mathematics and science. First exposure to computer programming which sparked passion for technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates section">
+            <div class="container">
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <div class="certificates-grid" id="certificates-grid">
+                    <!-- Initially visible certificates -->
+                    <div class="certificate-card">
+                        <img src="images/certificates/deloitte.png" alt="Data Analytics Job Simulation" >
+                        <div class="certificate-overlay">
+                            <h3>Data Analytics Job Simulation</h3>
+                            <p>Advanced Data analysis Forensic technology</p>
+                            <a href="images/certificates/deloitte.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card">
+                        <img src="images/certificates/nptel.png" alt="NPTEL" >
+                        <div class="certificate-overlay">
+                            <h3>Computer Graphics</h3>
+                            <p>NPTEL Online Certification by IIT Guwahati</p>
+                            <a href="images/certificates/nptel.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card">
+                        <img src="images/certificates/Programming with C and C++..png" alt="Programming with C and C++" onerror="this.src='https://via.placeholder.com/400x300/f59e0b/ffffff?text=UI%2FUX+Certificate'">
+                        <div class="certificate-overlay">
+                            <h3>Programming with C and C++.</h3>
+                            <p>By InternShala</p>
+                            <a href="images/certificates/Programming with C and C++..png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card">
+                        <img src="images/certificates/GDG.png" alt="GDG Solution Chalange Participation Certificate" onerror="this.src='https://via.placeholder.com/400x300/10b981/ffffff?text=Web+Development'">
+                        <div class="certificate-overlay">
+                            <h3>GDG Solution Chalange</h3>
+                            <p>By GooGle</p>
+                            <a href="images/certificates/GDG.pdf" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Hidden certificates - initially hidden -->
+                    <div class="certificate-card hidden-cert">
+                        <img src="images/certificates/3Dmodeling.png" alt="3D Modeling Certificate" onerror="this.src='https://via.placeholder.com/400x300/ef4444/ffffff?text=React+Certificate'">
+                        <div class="certificate-overlay">
+                            <h3>3D Modeling</h3>
+                            <p>By ATCPL</p>
+                            <a href="images/certificates/3Dmodeling.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card hidden-cert">
+                        <img src="images/certificates/3DMAX.png" alt="3D's MAX Certificate" onerror="this.src='https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Node.js+Certificate'">
+                        <div class="certificate-overlay">
+                            <h3>3D's MAX</h3>
+                            <p>By ATCPL</p>
+                            <a href="images/certificates/3DMAX.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card hidden-cert">
+                        <img src="images/certificates/Technex.png" alt="JAVASCRIPT WITH REACTJS" onerror="this.src='https://via.placeholder.com/400x300/f97316/ffffff?text=Database+Certificate'">
+                        <div class="certificate-overlay">
+                            <h3>JAVASCRIPT WITH REACTJS</h3>
+                            <p>PORTFOLIO USING JAVASCRIPT WITH REACT.JS</p>
+                            <a href="images/certificates/Technex.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card hidden-cert">
+                        <img src="images/certificates/webdev.png" alt="Web Development with HTML, CSS, and JavaScript" onerror="this.src='https://via.placeholder.com/400x300/84cc16/ffffff?text=Python+Certificate'">
+                        <div class="certificate-overlay">
+                            <h3>Web Development with HTML, CSS, and JavaScript</h3>
+                            <p>at ApexPlanet Software Pvt. Ltd.</p>
+                            <a href="images/certificates/webdev.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card hidden-cert">
+                        <img src="images/certificates/3rdcir.png" alt="Fundamentals of Python for Machine Learning, Data Science & Web Development" onerror="this.src='https://via.placeholder.com/400x300/ec4899/ffffff?text=AWS+Certificate'">
+                        <div class="certificate-overlay">
+                            <h3>Fundamentals of Python for Machine Learning, Data Science & Web Development</h3>
+                            <p>By iHUB Divya Sam park, IIT Roorkee</p>
+                            <a href="images/certificates/3rdcir.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-card hidden-cert">
+                        <img src="images/certificates/4thcir.png" alt="Introduction to Cybersecurity" onerror="this.src='https://via.placeholder.com/400x300/14b8a6/ffffff?text=Git+Certificate'">
+                        <div class="certificate-overlay">
+                            <h3>Introduction to Cybersecurity</h3>
+                            <p>By Cisco Networking Academy</p>
+                            <a href="images/certificates/4thcir.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card hidden-cert">
+                        <img src="images/certificates/2ndcir.png" alt="Salesforce Developer Virtual Internship" onerror="this.src='https://via.placeholder.com/400x300/14b8a6/ffffff?text=Git+Certificate'">
+                        <div class="certificate-overlay">
+                            <h3>Salesforce Developer Virtual Internship</h3>
+                            <p>By Salesforce</p>
+                            <a href="images/certificates/2ndcir.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card hidden-cert">
+                        <img src="images/certificates/10thcir.png" alt="ADCA" onerror="this.src='https://via.placeholder.com/400x300/14b8a6/ffffff?text=Git+Certificate'">
+                        <div class="certificate-overlay">
+                            <h3>ADCA</h3>
+                            <p>By Advance Institute Of Computer Technology, Darbhanga</p>
+                            <a href="images/certificates/10thcir.png" class="cert-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- See More/Less Button -->
+                <div class="certificates-toggle">
+                    <button class="btn btn-outline" id="certificates-toggle-btn">
+                        <span class="toggle-text">See More</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section">
+            <div class="container">
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-subtitle">What clients, mentors, and colleagues say about my work</p>
+                
+                <div class="testimonials-grid">
+                    <!-- Testimonial Card 1 -->
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Ketan's architectural visualization was stunning and realistic. His attention to detail and creative approach exceeded our expectations. Highly professional!"
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Rajesh Kumar</h4>
+                                <p>Architecture Firm Client</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 2 -->
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Working with Ketan was a great experience. His web development skills are exceptional and he delivered our project ahead of schedule with outstanding quality."
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Priya Sharma</h4>
+                                <p>Startup Founder</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 3 -->
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Ketan is an outstanding student with exceptional skills in graphics design and 3D modeling. His dedication and creativity make him stand out among peers."
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Dr. Anil Verma</h4>
+                                <p>Professor, Computer Graphics</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 4 -->
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The UI/UX design for our website was phenomenal. Ketan understood our vision perfectly and created a beautiful, user-friendly interface. Excellent work!"
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Amit Patel</h4>
+                                <p>E-commerce Business Owner</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 5 -->
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Ketan's 3D modeling skills are impressive. He created realistic product renders for our marketing campaign that significantly boosted our sales. Highly recommend!"
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Sneha Reddy</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 6 -->
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "As his mentor, I've watched Ketan grow into a skilled developer. His problem-solving abilities and passion for learning are truly commendable. A future leader!"
+                        </p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Prof. Ramesh Singh</h4>
+                                <p>Senior Faculty, Web Development</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visitor Profile Section -->
+        <section id="visitor-profile" class="visitor-profile section">
+            <div class="container">
+                <h2 class="section-title">Visitor Profile</h2>
+                <p class="section-subtitle">Share your information and let's connect</p>
+                
+                <form class="visitor-form" id="visitor-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="country" placeholder="Country" required>
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" name="state" placeholder="State" required>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message or Feedback" rows="4" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Profile</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ketanpaswan53@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9771735011</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Darbhanga, Bihar, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="hire-section">
+                            <h4>Interested in hiring me?</h4>
+                            <button class="btn btn-outline hire-btn" id="hire-btn">
+                                <i class="fas fa-handshake"></i>
+                                Hire Me
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="dashboard section">
+            <div class="container">
+                <h2 class="section-title">Analytics Dashboard</h2>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="dashboard-content">
+                            <h3 id="visitor-count">0</h3>
+                            <p>Total Visitors</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="dashboard-content">
+                            <h3 id="hire-count">0</h3>
+                            <p>Times Hired</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <div class="dashboard-content">
+                            <h3 id="state-count">0</h3>
+                            <p>States Reached</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="dashboard-content">
+                            <h3 id="message-count">0</h3>
+                            <p>Messages Received</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section">
+            <div class="container">
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Hear from those who've worked with me</p>
+                
+                <div class="testimonials-container">
+                    <div class="testimonials-carousel" id="testimonials-carousel">
+                        <div class="testimonial-item active">
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Ketan delivered an exceptional website that exceeded our expectations. His attention to detail and creative approach made our project stand out.</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="images/client-sarah.jpg" alt="Sarah Johnson" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; width: 80px; height: 80px; background: linear-gradient(135deg, #ff6b6b, #ee5a24); border-radius: 50%; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
+                            SJ
+                        </div>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Sarah Johnson</h4>
+                                        <p>CEO, TechStart Inc.</p>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Working with Ketan was a pleasure. He understood our vision perfectly and created a stunning design that captured our brand essence.</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="images/client-michael.jpg" alt="Michael Chen" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; width: 80px; height: 80px; background: linear-gradient(135deg, #4ecdc4, #44a08d); border-radius: 50%; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
+                            MC
+                        </div>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Michael Chen</h4>
+                                        <p>Marketing Director</p>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Professional, creative, and deadline-oriented. Ketan transformed our ideas into a beautiful, functional website that our customers love.</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="images/client-emily.jpg" alt="Emily Rodriguez" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; width: 80px; height: 80px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 50%; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
+                            ER
+                        </div>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Emily Rodriguez</h4>
+                                        <p>Founder, Creative Studio</p>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <div class="testimonial-text">
+                                    <i class="fas fa-quote-left"></i>
+                                    <p>Outstanding graphics design work! Ketan's creative vision and technical skills delivered exactly what we needed for our brand.</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="images/client-david.jpg" alt="David Kim" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div style="display: none; width: 80px; height: 80px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">
+                            DK
+                        </div>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>David Kim</h4>
+                                        <p>Product Manager</p>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-navigation">
+                        <button class="nav-btn prev-btn" id="prev-testimonial">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="testimonials-dots" id="testimonials-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                            <span class="dot" data-slide="3"></span>
+                        </div>
+                        <button class="nav-btn next-btn" id="next-testimonial">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <p>&copy; 2024 Ketan Anand. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/ketananand76?tab=repositories" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/posts/ketan-anand-358782235_offer-letter-from-codesoft-internship-program-activity-7207768674013786112-f5Kx/?utm_source=share&utm_medium=member_desktop" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/Mr__perfect_143/status/1539407660675923968" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ketan_2k4?igsh=OW13cTczMno2dW43" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/themes.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/bottle-3d.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

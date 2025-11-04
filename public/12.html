@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 12th Grade Marksheet</title>
+    <style>
+        /* Google Drive-inspired theme: Clean, white, with blue accents */
+        body {
+            font-family: 'Roboto', Arial, sans-serif; /* Similar to Google's font */
+            background-color: #f8f9fa; /* Light gray background like Drive */
+            margin: 0;
+            padding: 0;
+            color: #202124; /* Dark text */
+        }
+        .header {
+            background-color: #ffffff; /* White header */
+            border-bottom: 1px solid #dadce0; /* Subtle border */
+            padding: 16px 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Light shadow */
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #1a73e8; /* Google blue */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 24px;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 16px;
+            justify-items: center; /* Center single card */
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 16px;
+            text-align: center;
+            transition: box-shadow 0.2s, border-color 0.2s; /* Smooth hover */
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            width: 100%;
+            max-width: 300px; /* Limit card width */
+        }
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            border-color: #1a73e8; /* Blue border on hover */
+        }
+        .card-icon {
+            font-size: 48px;
+            color: #5f6368; /* Gray icon */
+            margin-bottom: 8px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0 0 8px 0;
+            color: #202124;
+        }
+        .card-desc {
+            font-size: 14px;
+            color: #5f6368;
+            margin: 0;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 12px 16px;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+            .container {
+                padding: 0 16px;
+            }
+            .cards-grid {
+                grid-template-columns: 1fr; /* Single column on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My 12th Grade Marksheet</h1>
+    </div>
+    <div class="container">
+        <div class="cards-grid">
+            <!-- 10th Marksheet Card -->
+            <a href="https://drive.google.com/file/d/1dwFNaipOWUiVL-4J2XCdAyMqOaz7tFvF/view?usp=drive_link" target="_blank" class="card">
+                <div class="card-icon">📄</div> <!-- PDF icon (replace with image if needed) -->
+                <h2 class="card-title">12th Grade Marksheet</h2>
+                <p class="card-desc">View your 12th-grade marksheet.</p>
+            </a>
+            <!-- Add more cards here if needed, e.g., for 12th or other marksheets -->
+        </div>
+    </div>
+</body>
+</html>
