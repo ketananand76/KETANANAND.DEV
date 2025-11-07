@@ -1,4 +1,4 @@
-# Ketan Paswan - Professional Portfolio
+# Ketan Anand - Professional Portfolio
 
 A fully dynamic, professional-level personal portfolio website built with HTML, CSS, and vanilla JavaScript, featuring a Node.js backend for email functionality and visitor analytics.
 
