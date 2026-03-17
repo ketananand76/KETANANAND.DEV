@@ -264,9 +264,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**Ketan Paswan**
+**Ketan Anand**
 - Email: ketanpaswan53@gmail.com
-- Portfolio: [Your Portfolio URL]
+- Portfolio: https://ketananand-dev-1.onrender.com/
 
 ## 🤝 Contributing
 
