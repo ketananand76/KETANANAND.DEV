@@ -266,7 +266,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Ketan Anand**
 - Email: ketanpaswan53@gmail.com
-- Portfolio: https://ketananand-dev-1.onrender.com/
+- Portfolio: [https://ketananand.vercel.app/]
 
 ## 🤝 Contributing
 
